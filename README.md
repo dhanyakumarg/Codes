@@ -101,6 +101,32 @@ I am a passionate third-year student pursuing a degree in Electronics & Communic
 
 
 
+in this 2 nd week
+# installation of the 
+
+
+
+![image](https://github.com/dhanyakumarg/vvssdd/assets/132377400/a06bd41c-172a-4796-96ef-ecebcc3926c1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### wave form
+
+
+
+![verilog files](https://github.com/dhanyakumarg/vvssdd/assets/132377400/4b0fa0f4-b2e9-40fd-a11a-83aa2abf85eb)
 
 
 
