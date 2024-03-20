@@ -1,4 +1,12 @@
-# vvssdd
+# Research Internship on VSDSquadron Mini RISC-V Development Board
+**About:**
+The internship is based on RISC-V Development Board(VSDSquadron Mini),which is a flagship product of VLSI System Design.It is a 4-week internship program on RISC-V.
+The program has three types of internship
+1.Beginners
+2.Intermediate
+3.Advanced.
+My internship is on Beginner(VLSI), which is on VLSI.         
+For more details of company  visit [Company's Website](https://www.vlsisystemdesign.com/).
 
 I'm dhanyakumar g
 
@@ -10,6 +18,8 @@ I am a passionate third-year student pursuing a degree in Electronics & Communic
 
 📧 ddhanyakumarg@gmail.com 
 
+## VSDSquadron Mini RISC-V Development Board     ![image1](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/27128265-69df-4725-bc1e-84f6475f907f)
+**Board Specifications** 
 
 |   Board   |   Name   | Description                |
 | :-------- | :------- | :------------------------- |
@@ -33,9 +43,31 @@ I am a passionate third-year student pursuing a degree in Electronics & Communic
 |   Memory   |  SRAM  | 2kb onchip volatile sram,16kb external program memory        |
 
 
+ For board information [Click here for board link](https://www.vlsisystemdesign.com/vsdsquadronmini/)
+
+This repository is mainly for documentation of all the progress
+## Progress Report  
+
+------------------------------------------------------------------------  
 
 
+### 1st Meeting - The first online meet was held on 16th of Feb 2024 @6PM
+Description:Steps to be followed for software installation.
 
+<details>
+    <summary> TASK 1 </summary>
+
+Based on the internship type different task were assigned. 
+
+TASKS   
+1.install Yosys
+2.install iverilog
+3.install gtkwave  
+
+### To install git
+
+
+``` sudo apt install git-all ```
 
 ## Screenshots
 
@@ -89,26 +121,77 @@ I am a passionate third-year student pursuing a degree in Electronics & Communic
 ```
 ![Screenshot from 2024-02-23 11-46-01](https://github.com/dhanyakumarg/vvssdd/assets/132377400/864e7fcd-ef07-44c6-a9ce-18f8657f554b)
 
+</details>
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 2nd Meeting - The second online meet was held on 20th of Feb 2024 @6PM
+Description: Block diagram and identify input ports, input waveforms, output ports and output waveforms.  
+
+<details>
+    <summary> TASK 2 </summary>
+Tasks  
+1.To create a block diagram of the respective project  
+2.To identify input ports, input waveforms, output ports and output waveforms  
+
+### Synchronous First in First Out for Memory Storage and Processing  
+
+**Introduction**: 
+
+Synchronous First In First Out (FIFO) is a fundamental data storage and processing mechanism widely employed in digital systems to manage the orderly flow of data. It ensures that data is processed in the same sequence it was received, making it essential for applications where timing and order are critical.  
+
+**Applications**:  
+
+1.**Communication Interfaces:** Synchronous FIFOs are vital in communication protocols like UART and SPI, buffering data between devices with different clock domains to ensure synchronized data transfer.
+
+2.**Digital Signal Processing (DSP):** In DSP applications, synchronous FIFOs manage data flow between processing stages, maintaining the sequence integrity necessary for accurate signal processing.
+
+3.**Memory Interfaces:** They serve as interfaces between memory modules operating at varying speeds or utilizing different protocols, facilitating efficient data transfer and access while preserving order.  
+
+**Block Diagram**  
 
 
 # Synchronous First In First Out for Memory Storage and Processing
 ![Synchronous FIFO pdf](https://github.com/avinashjaiswal1598/Risc-V-mini/assets/160040323/f2cc94e1-feac-4f9c-bbbe-b52f01479df5)
 
 
-## input output Waveform 
+**Input and Output Waveform**  
 ![Time diagram for Synchronous FIFO](https://github.com/avinashjaiswal1598/Risc-V-mini/assets/160040323/63bb283d-c5e0-4d50-a72e-49231bda283b)
 
+</details>  
 
+----------------------------------------------------------------------------------  
+### 3rd Meeting - The third online meet was held on 22nd of Feb 2024 @6PM
+Description: To know about gtkwave, Verilog and generate the waveform.
+<details>
+    <summary> TASK 3 </summary>
+Tasks  
+1.To know about gtkwave and iverilog   
+ 
+2.To generate waveform
 
-in this 2 nd week
-# installation of the 
+**GTKWave**  
+GTKWave is a waveform viewer for Verilog simulation results, enabling visualization of signals over time. 
 
+**iverilog**  
+Icarus Verilog (iverilog) is a free Verilog simulation and synthesis tool, useful for compiling and simulating Verilog designs, often paired with GTKWave for waveform viewing.
+
+### **Steps to generate waveform using gtkwave and iverilog** ###
+
+1.Cloning my gitub repository  
+``git clone https://github.com/sanjaypk16/VSDSquadron-RISCV.git`` 
 
 
 ![image](https://github.com/dhanyakumarg/vvssdd/assets/132377400/a06bd41c-172a-4796-96ef-ecebcc3926c1)
 
 
+2.Simulating iverilog  
+``cd VSDSquadron-RISCV/``            where **VSDSquadron-RISCV/** is my repository  
+
+
+``iverilog fifo.v fifo_tb.v``  
+
+Generating dump file  
+``./a.out``  
 
 
 
@@ -116,43 +199,108 @@ in this 2 nd week
 
 
 
-
-
-
-
-
-
-### wave form
+3.To get waveform  
+ ```gtkwave dump.vcd``` 
+ 
+### **Waveform** ###
 
 
 
 ![verilog files](https://github.com/dhanyakumarg/vvssdd/assets/132377400/4b0fa0f4-b2e9-40fd-a11a-83aa2abf85eb)
 
+</details>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+### 4th Meeting - The fourth online meet was held on 27th of Feb 2024 @6PM    
+
+Description: Generating the waveform with the actual code and with netlist. Verifying both the waveform
+
+<details>
+    <summary> TASK 4 </summary>  
 
 
+  
+**To invoke yosys**   
+
+``yosys```  
+where VSDSquadron-RISCV is my folder  
+
+**To read the library** 
+
+``read_liberty -lib ../../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib``
 
 ![WhatsApp Image 2024-02-29 at 6 38 00 PM](https://github.com/dhanyakumarg/vvssdd/assets/132377400/06e8997f-6576-423f-b1ea-2bd4681519bf)
 
+**Reading the design**
 
+
+```read_verilog fifo.v```  
+
+where fifo is the module name of the design code
 
 ![WhatsApp Image 2024-02-29 at 6 38 00 PM (1)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/252b52f1-df71-4a51-b2bc-c2a1e709322b)
 
+**Synthesizing the module**
+
+``` synth -top fifo ```    
+
+where fifo is the module name of the design code 
 ![WhatsApp Image 2024-02-29 at 6 38 00 PM (2)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/d3000fa0-ecb9-478c-af61-de5fc736c197)
- 
+
+ **To generate netlist**  
+
+``` abc -liberty ../../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+
 ![WhatsApp Image 2024-02-29 at 6 38 00 PM (3)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/9596105c-8cd8-4223-abd9-8ad70b5c7e7c)
 
+**To write the netlist**  
+`` write_verilog fifo_netlist.v`` 
+
+
+
+-noattr is used to get simplified version of netlist file  
+
+``` write_verilog -noattr fifo_netlist1.v```  
+
+
+```flatten```
 
 ![WhatsApp Image 2024-02-29 at 6 38 01 PM](https://github.com/dhanyakumarg/vvssdd/assets/132377400/fd16df67-d7cc-418f-8ecc-d877cba746fc)
 
 
+
+```show```  
+
+**To open the netlist**  
+
+
+```!gvim vend_netlist1.v```  
+
+
 ![WhatsApp Image 2024-02-29 at 6 38 02 PM](https://github.com/dhanyakumarg/vvssdd/assets/132377400/320e9d53-098b-4e88-ac0b-0c00d6b33958)
+
+**Opening the netlist file**   
 
 ![WhatsApp Image 2024-02-29 at 6 38 02 PM (1)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/bd26e91e-108d-456e-9ee1-ee02f10f44a9)
 
 ![WhatsApp Image 2024-02-29 at 6 38 07 PM](https://github.com/dhanyakumarg/vvssdd/assets/132377400/70fdb7ab-bca7-493f-8e5d-4ac3e1ea1cf4)
 
+**To verify whether netlist will match with the design**  
+
+```iverilog netlist1.v fifo_tb.v```   
+
+```./a.out```  
+
+``` gtkwave dumpfile.vcd```
+
 
 ![WhatsApp Image 2024-02-29 at 6 38 07 PM (1)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/396fbed1-df73-4d2a-943c-0aaa3d76bc49)
+
+
+</details>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------  
 
 ![WhatsApp Image 2024-02-29 at 6 38 08 PM](https://github.com/dhanyakumarg/vvssdd/assets/132377400/2ae39b06-5a67-4f02-8bf7-111678112a96)
 
@@ -162,6 +310,23 @@ in this 2 nd week
 
 ![WhatsApp Image 2024-02-29 at 6 38 09 PM (1)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/bb2d31b7-562f-4688-b18a-2007108894e0)
 
+### 5th task - The fifth task  was given on 1st of March 2024  
+
+Description:  To simulate the waveform with the given design code and netlist.  
+
+
+
+<details>
+    <summary> TASK 5 </summary>  
+
+
+**Cloning  gitub repository**    
+
+```git clone https://github.com/Anmol-S314/iiitb_sfifo.git```  
+
+```iverilog iiitb_sfifo.v iiitb_sfifo_tb.v```  
+
+```gtkwave iiitb dump.vcd```  
 
 
 
