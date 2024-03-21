@@ -329,9 +329,16 @@ Description:  To simulate the waveform with the given design code and netlist.
 ```gtkwave iiitb dump.vcd```  
 
 
+![WhatsApp Image 2024-03-21 at 2 09 22 PM](https://github.com/dhanyakumarg/vvssdd/assets/132377400/794c2920-2fcc-4d81-9965-f6c3962a8df8)
 
 
 
+![WhatsApp Image 2024-03-21 at 2 09 22 PM (1)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/94f5a2ea-c49c-43c6-a2d1-1e8f613868f2)
 
 
+![WhatsApp Image 2024-03-21 at 2 09 22 PM (2)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/9dc7fe39-e858-4a91-980a-cdb71368a6e6)
 
+![WhatsApp Image 2024-03-21 at 2 09 22 PM (3)](https://github.com/dha![WhatsApp Image 2024-03-21 at 2 09 22 PM (4)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/c2c5113e-254b-4721-b725-873b5819670e)
+nyakumarg/vvssdd/assets/132377400/6f50a5e7-08b4-40ff-b53b-5fcc2a6d8ca6)
+![WhatsApp Image 2024-03-21 at 2 09 22 PM (5)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/e0231db6-3c14-4f79-85e6-637171587371)
+![WhatsApp Image 2024-03-21 at 2 09 22 PM (6)](https://github.com/dhanyakumarg/vvssdd/assets/132377400/05e7a066-008f-409b-8401-74158458cc6c)
