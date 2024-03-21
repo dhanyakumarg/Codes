@@ -1,13 +1,4 @@
-# Research Internship on VSDSquadron Mini RISC-V Development Board
-**About:**
-The internship is based on RISC-V Development Board(VSDSquadron Mini),which is a flagship product of VLSI System Design.It is a 4-week internship program on RISC-V.
-The program has three types of internship
-1.Beginners
-2.Intermediate
-3.Advanced.
-My internship is on Beginner(VLSI), which is on VLSI.         
-For more details of company  visit [Company's Website](https://www.vlsisystemdesign.com/).
-
+#  Internship on VSDSquadron Mini RISC-V Development Board
 I'm dhanyakumar g
 
 I am a passionate third-year student pursuing a degree in Electronics & Communication Engineering. My academic journey has fueled my interest in exploring the intricacies of embedded systems, PCB layout & design, and various hardware components.
@@ -17,6 +8,14 @@ I am a passionate third-year student pursuing a degree in Electronics & Communic
 🏫 Mangalore Institute of Technology & Engineering
 
 📧 ddhanyakumarg@gmail.com 
+The internship is based on RISC-V Development Board(VSDSquadron Mini),which is a flagship product of VLSI System Design.It is a 4-week internship program on RISC-V.
+The program has three types of internship
+1.Beginners
+2.Intermediate
+3.Advanced.
+My internship is on Beginner(VLSI), which is on VLSI.         
+For more details of company  visit [Company's Website](https://www.vlsisystemdesign.com/).
+
 
 ## VSDSquadron Mini RISC-V Development Board     ![image1](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/27128265-69df-4725-bc1e-84f6475f907f)
 **Board Specifications** 
